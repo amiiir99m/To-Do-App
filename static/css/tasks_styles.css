@@ -1,0 +1,146 @@
+body {
+    background: #020631;
+    font: 14px 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* وسط چین کردن افقی */
+    justify-content: flex-start; /* قرار دادن در بالای صفحه */
+    height: 100vh; /* تمام ارتفاع صفحه */
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 20px; /* فاصله بین عنوان و بالای صفحه */
+}/* استایل دهی به المان‌های لیست */
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+/* استایل دهی به هر المان لیست */
+#task-list li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 500px;
+
+    
+}
+
+/* تغییر رنگ پس زمینه آیتم‌ها هنگام هاور */
+#task-list li:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px);
+}
+
+.delete-button {
+    background-color: #e63946; /* رنگ زمینه */
+    color: #fff; /* رنگ متن */
+    border: none;
+    padding: 3px 8px; /* اندازه padding */
+    border-radius: 20px; /* شکل گرد */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* انیمیشن تغییر رنگ زمینه */
+    font-size: 16px; /* اندازه فونت */
+}
+
+.delete-button:hover {
+    background-color: #b3272b; /* رنگ زمینه در حالت hover */
+}
+
+/* استایل دهی به عنوان تسک */
+#task-list li strong {
+    color: #333;
+    font-size: 18px;
+}
+
+/* استایل دهی به توضیحات تسک */
+#task-list li p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* استایل دهی به تاریخ پایان تسک */
+#task-list li span {
+    color: #999;
+    font-size: 12px;
+    display: block;
+}
+
+
+#task-list li input {
+    color: #333;
+    font-size: 18px;
+    float: right; /* اضافه کردن استایل float به سمت راست */
+}
+
+
+#task-list li label {
+    color: #333;
+    float: right; /* اضافه کردن استایل float به سمت راست */
+}
+
+
+#task-list li.completed {
+    background-color: #5529dc;
+}
+
+
+
+
+#myForm {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    
+}
+
+label {
+    font-weight: bold;
+}
+
+
+input[type="text"] {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 500px;
+    position: relative; /* تغییر موقعیت */
+
+}
+
+
+
+
+button[type="submit"] {
+    background-color: #5529dc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    right: 0;
+    position: absolute;
+    height: 80%;
+    color: #f9f9f9;
+    font-size: 14px;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+    color: #f9f9f9;
+    font-size: 14px;
+
+}
+

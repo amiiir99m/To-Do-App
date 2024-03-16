@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/tasks_styles.css' %}">
+    <title>Tasks</title>
+</head>
+<body>
+
+    <h1>Hello Today Is a New Day Do Your Best</h1>
+
+
+    <!--- create task --->
+    <form id="myForm">
+        {% csrf_token %}
+        <div class="input-container">
+            <input type="text" id="title" name="title" placeholder="Add New Task ...">
+            <button type="submit">add</button>
+        </div>
+    </form>
+
+    <!--- end create task --->
+
+
+    <!--- task list --->
+    <ul id="task-list"></ul>
+
+
+    
+
+    
+    <script src="{% static 'js/tasks.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
+     <!--- end task list --->
+</body>
+</html>
